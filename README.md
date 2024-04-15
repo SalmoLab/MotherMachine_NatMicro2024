@@ -1,5 +1,5 @@
 # MotherMachine_NatMicro2024
-Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in manuscript.
+Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in the manuscript.
 
 Information about the included files:
 -------------------------------------------------------------------------------------------------
