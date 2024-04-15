@@ -1,7 +1,7 @@
 # MotherMachine_NatMicro2024
 Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in manuscript.
 
-/--------------------------Information about the included files:--------------------------------/
+Information about the included files:
 -------------------------------------------------------------------------------------------------
 
 
@@ -26,11 +26,11 @@ YCentroid - list of Y-centroids of the cell from 'begin' to 'end' (location of t
 motherLineageFlag - criterium if the cell cycle belongs to a mother lineage (cell located permanently at the bottom of the trap) <br>
 parentID - ID of the parent cell of the cycle. If the cycle starts at frame 1, the 'parentID' entry is empty <br>
 daughtersIDs - IDs of daughter ID(s) of the cycle. If the cycle ends without a daughter, the 'daughterIDs' entry is empty <br>
-loglength <br>
-time_h <br>
-growthrate <br>
-timeCenter <br>
-Location <br>
+loglength - list of logarithmized 'length' entries <br>
+time_h - 'times' entries in hours <br>
+growthrate - list of growth rates [1/h], calculated by linear regression from the 'loglengths' entries <br>
+timeCenter - average time, in which the cell division cycle was observed (mean of 'time_h' entry) <br>
+Location - average location of the cell division cycle (mean of the 'YCentroid' entries) <br>
 
 
 /-----------------------------------------------------------------------------------------------/
