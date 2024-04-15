@@ -5,10 +5,10 @@ Information about the included files:
 -------------------------------------------------------------------------------------------------
 
 1.
- The Excel-table **"lysis events R1 and R2.xlsx"** lists the mother lineages according to the phenotypes 'filamentous', 'lysis', 'growth arrest' or 'regrowth'
-Sheet 1 contains data from both replicates R1 and R2.
-Sheet 2 contains data for R1
-Sheet 2 contains data for R2
+ The Excel-table **"lysis events R1 and R2.xlsx"** lists the mother lineages according to the phenotypes 'filamentous', 'lysis', 'growth arrest' or 'regrowth' <br>
+Sheet 1 contains data from both replicates R1 and R2. <br>
+Sheet 2 contains data for R1 <br>
+Sheet 2 contains data for R2 <br>
 
 2.
 In the **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** -files the data of all detected cell division cycles for replicates R1 and R2, respectively, is saved in a table-like manner (struct). A cylce_list-struct contains the following data for every cycle:
@@ -34,12 +34,11 @@ In the **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** -fi
 **Location** - average location of the cell division cycle (mean of the 'YCentroid' entries) <br>
 
 3.
-The **Analyis** folder contains the following files and MATLAB-Scripts:
-**Cycle_Generation_Script** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files
-**Plots_Script** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data
+The **Analyis** folder contains the following files and MATLAB-Scripts: <br>
+**Cycle_Generation_Script** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files <br>
+**Plots_Script** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data <br>
 
-The **Colormaps** - file contains a list of colormaps in .mat-format, which was downloaded from Fabio Crameri's resource:
-
+The **Colormaps** - file contains a list of colormaps in .mat-format, which was downloaded from Fabio Crameri's resource: <br>
 Crameri, F. (2018), Scientific colour maps, Zenodo, doi:10.5281/
 zenodo.1243862
 
@@ -47,5 +46,5 @@ zenodo.1243862
   
 
 
-bla
+Instruction for script usage
 -------------------------------------------------------------------------------------------------
