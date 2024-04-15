@@ -1,5 +1,5 @@
 # MotherMachine_NatMicro2024
-Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in the manuscript.
+Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in manuscript.
 
 Information about the included files:
 -------------------------------------------------------------------------------------------------
@@ -35,10 +35,10 @@ In the **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** -fi
 
 3.
 The **Analyis** folder contains the following files and MATLAB-Scripts: <br>
-**Cycle_Generation_Script** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files <br>
-**Plots_Script** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data <br>
+**Cycle_Generation_Script.mat** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files <br>
+**Plots_Script.mat** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data <br>
 
-The **Colormaps** - file contains a list of colormaps in .mat-format, which was downloaded from Fabio Crameri's resource: <br>
+The **Colormaps.mat** - file contains a list of colormaps in .mat-format, which was downloaded from Fabio Crameri's resource: <br>
 Crameri, F. (2018), Scientific colour maps, Zenodo, doi:10.5281/
 zenodo.1243862
 
@@ -48,3 +48,13 @@ zenodo.1243862
 
 Instruction for script usage
 -------------------------------------------------------------------------------------------------
+The **Cycle_Generation_Script.mat** script is organized in several sections:
+
+1. Selection of working folder, loading of colormaps
+
+2. (OPTIONAL) Deletion of faulty cycles
+
+If faulty cycles (e.g., merging cells or a cell breaking in parts during a cycle) were detected in the course of processing in section 3, the user can interrupt the execution of section 3 and enter the ID of the multipoint which is currently being process. This will lead to the deletion of all cycles for the corresponding multipoint. After correction of the wrongly segmented part of the binary mask (e.g., by using in-built functions in FIJI to add white pixels (+1) to the binary mask or deleting pixels (x 0)), the automated processing of cycle detection in section 3 has to be started again with the same multipoint ID.
+
+3. Automated tracking
+After the user selects the multipoint, the script loads every kymograph and the corresponding binary mask, one at a time. The binary masks were previously generated in Ilastik using the pixel classification function. The algorithm extracts the data for each segmented object (cell), and links these data according to cycles. After processing the last kymograph in the multipoint, the kymograph together with color-coded overlays is saved as a .jpg image in the 'Analysis' folder and the user is asked to continue with the next multipoint. Each cycle is plotted in the kymograph with a random color, which helps to identify faulty cycles. When all multipoints are processed like that, the data is saved in the **CycleData.mat** - file
