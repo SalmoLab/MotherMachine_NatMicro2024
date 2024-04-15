@@ -65,8 +65,8 @@ After the user selects the multipoint, the script loads every kymograph and the 
 
 For each cycle longer which is longer than 3 frames, a linear fit is applied on the logarithmized length data to calculate the growth rates
 
-
-
+<br>
+<br>
 
 The **Plots_Script.mat** script is organized in the following sections:
 
