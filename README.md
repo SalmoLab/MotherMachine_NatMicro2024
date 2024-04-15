@@ -36,6 +36,7 @@ In the **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** -fi
 3.
 The **Analyis** folder contains the following files and MATLAB-Scripts: <br>
 **Cycle_Generation_Script.mat** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files <br>
+
 **Plots_Script.mat** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data <br>
 
 The **Colormaps.mat** - file contains a list of colormaps in .mat-format, which was downloaded from Fabio Crameri's resource: <br>
@@ -63,6 +64,8 @@ After the user selects the multipoint, the script loads every kymograph and the 
 4. Growth rate determination
 
 For each cycle longer which is longer than 3 frames, a linear fit is applied on the logarithmized length data to calculate the growth rates
+
+
 
 
 The **Plots_Script.mat** script is organized in the following sections:
