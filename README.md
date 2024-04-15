@@ -34,7 +34,17 @@ In the **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** -fi
 **Location** - average location of the cell division cycle (mean of the 'YCentroid' entries) <br>
 
 3.
-The Analyis folder contains the MATLAB-Scripts for the generation of Cycles
+The **Analyis** folder contains the following files and MATLAB-Scripts:
+**Cycle_Generation_Script** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files
+**Plots_Script** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data
+
+The **Colormaps** - file contains a list of colormaps in .mat-format, which was downloaded from Fabio Crameri's resource:
+
+Crameri, F. (2018), Scientific colour maps, Zenodo, doi:10.5281/
+zenodo.1243862
+
+
+  
 
 
 bla
