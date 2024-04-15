@@ -2,8 +2,7 @@
 Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in manuscript.
 
 /-----------------------------------Information about the included files:-----------------------------------------/
-/-----------------------------------------------------------------------------------------------------------------/
-
+------------------------------------------------------------------------------------------------------------------
 
 
 The Excel-table "lysis events R1 and R2.xlsx" lists the mother lineages according to the phenotypes 'filamentous', 'lysis', 'growth arrest' or 'regrowth'
@@ -32,7 +31,6 @@ time_h
 growthrate
 timeCenter
 Location
-------------------------------------------------------------------------------------------------------------------
-Bla
-/-----------------------------------------------------------------------------------------------------------------/
+
+
 /-----------------------------------------------------------------------------------------------------------------/
