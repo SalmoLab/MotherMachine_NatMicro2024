@@ -1,5 +1,5 @@
 # MotherMachine_NatMicro2024
-Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are in manuscript.
+Scripts and code to analyse bacterial growth in the mother machine used for the Nature Microbiology publication Osbelt et al. 2024. Details are found in the manuscript.
 
 Information about the included files:
 -------------------------------------------------------------------------------------------------
@@ -34,7 +34,7 @@ In the **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** -fi
 **Location** - average location of the cell division cycle (mean of the 'YCentroid' entries) <br>
 
 3.
-The **Analyis** folder contains the following files and MATLAB-Scripts: <br>
+The **Analysis** folder contains the following files and MATLAB-Scripts: <br>
 **Cycle_Generation_Script.mat** - script for the detection of cell division cycles and generation of cycle data, which is stored the CycleData .mat-files <br>
 
 **Plots_Script.mat** - the script is used to read CycleData .mat-files, the  **"lysis events R1 and R2.xlsx"** table, and to generate plots based on these data <br>
