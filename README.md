@@ -48,7 +48,7 @@ zenodo.1243862
 
 Instruction for script usage
 -------------------------------------------------------------------------------------------------
-The **Cycle_Generation_Script.mat** script is organized in several sections:
+The **Cycle_Generation_Script.mat** script is organized in the following sections:
 
 1. Selection of working folder, loading of colormaps
 
@@ -64,3 +64,17 @@ After the user selects the multipoint, the script loads every kymograph and the 
 
 For each cycle longer which is longer than 3 frames, a linear fit is applied on the logarithmized length data to calculate the growth rates
 
+
+The **Plots_Script.mat** script is organized in the following sections:
+
+1. Load Cycle Data
+
+The cycle data from the files **CycleData_20231017_4h_R1.mat** and **CycleData_20231025_4h_R2.mat** is loaded and pooled into one combined cycle list.
+
+2. Sort data according to multipoints
+
+The data from continuously enumerated multipoints, representing two relicates, is sorted in two categories, whether it belongs to the condition 'WT' or 'TN'
+
+3. Mean growth rate plot
+
+4. Bar plot of mother lineage phenotypes
